@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Body Styling */
+      body {
+        background-color: #333;
+      }
+      .primary__heading {
+        color: green;
+      }
+      #welcome {
+        background-color: #f4f4f4;
+      }
+      /* Multiple Selectors*/
+      #welcome #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      /* Nested Selectors */
+      #welcome p {
+        font-size: 20px;
+      }
+      #about h2 {
+        color: white;
+      }
+      #about p {
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        letter-spacing: 2px;
+        word-wrap: none;
+        border: 2px dotted rebeccapurple;
+        box-shadow: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary__heading">Welcome</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam
+        enim maiores cumque ipsum, commodi autem nobis illum, in nisi ea.
+        Dolores nisi, quod itaque obcaecati a dolore suscipit laborum!Ullam
+        pariatur provident ad ducimus fugit corporis maiores laudantium
+        asperiores, delectus mollitia iusto debitis at perferendis corrupti?
+        Autem suscipit consequuntur a, soluta cum placeat inventore quis quidem
+        alias impedit nihil!
+      </p>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto illo
+        mollitia qui vel facilis eveniet eaque eius dolores? Consequatur porro
+        quidem provident natus repudiandae minima blanditiis! Doloribus cumque
+        rerum consequuntur.Culpa ut quas ad nulla! Minus nobis molestiae
+        delectus nihil consequuntur dolorem in atque enim, perspiciatis tempore
+        deleniti quidem, aliquam quis corrupti quas, suscipit expedita itaque
+        eos voluptas laudantium ad.
+      </p>
+    </div>
+  </body>
+</html>

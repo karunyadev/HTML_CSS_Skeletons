@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vh and VW css units for viewport</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        background: url("https://source.unsplash.com/daily") no-repeat center
+          center/cover;
+        color: white;
+        /* Taking 50 of the 100 slices that we get
+        for the viewport height*/
+
+        height: 50vh;
+        text-align: center;
+        padding: 2rem;
+        padding-top: 2rem;
+        display: block;
+        margin: 1rem auto;
+      }
+      header h1 {
+        font-size: 36px;
+      }
+      header p {
+        color: green;
+        font-size: 20px;
+        padding: 20px;
+      }
+      .btn {
+        /*Styles for the buttons*/
+        display: inline-block;
+        text-decoration: none;
+        background: #f4f4f4;
+        color: #333333;
+        padding: 0.75rem 2rem;
+        border-radius: 5px;
+      }
+      section { 
+          padding: 2rem;
+      }
+      @media(max-height: 450px) { 
+          header { 
+              padding-top: 5rem;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header of the application  -->
+    <header>
+      <h1>Welcome to our Website</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, ea
+        dolor maxime modi consequatur libero odit inventore quas voluptas illo
+        reprehenderit provident quod et? Quas eum voluptate ad sapiente dolore.
+      </p>
+      <a href="#" class="btn">Find out more</a>
+    </header>
+
+    <!-- About section of the basic design agency application -->
+    <section>
+      <h1>About Section</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita earum
+        quas error esse itaque tempore reprehenderit? Corporis architecto iure
+        expedita cumque earum delectus eum perferendis aliquam. Dolorem rerum
+        itaque amet.
+      </p>
+    </section>
+  </body>
+</html>

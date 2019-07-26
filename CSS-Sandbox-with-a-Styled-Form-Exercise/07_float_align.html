@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Float and Align</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+      }
+      .container {
+        /*Step 1 while designing always take a parent 
+        container and give it a max-width property*/
+        /*Always use max-width for your containers*/
+        max-width: 960px;
+        margin: 30px auto;
+      }
+      .box {
+        background: #f4f4f4;
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+      .box p {
+        text-align: center;
+        text-align: justify;
+      }
+      /* Without flex and CSS Grid, its very difficult 
+      to do responsiveness as you can see here*/
+      #box-2 {
+        float: left;
+        width: 68%;
+      }
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+      .clearfix {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos fuga,
+          alias labore minus ea ipsum inventore? Enim maxime magni inventore!
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos fuga,
+          alias labore minus ea ipsum inventore? Enim maxime magni inventore!
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos fuga,
+          alias labore minus ea ipsum inventore? Enim maxime magni inventore!
+        </p>
+      </div>
+      <!-- For clearing the floats -->
+      <div class="clearfix"></div>
+      <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit
+          sunt illum ex dolor, quos minus et iure voluptate asperiores!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

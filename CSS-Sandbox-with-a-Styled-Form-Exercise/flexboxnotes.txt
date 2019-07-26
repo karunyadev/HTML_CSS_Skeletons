@@ -1,0 +1,21 @@
+Flexbox notes 
+
+Modern layout mode in CSS3 
+
+flex is a valud for the display property 
+Replaces floats and is much more elegant 
+to work with 
+Align items both horizontally (row) and vertically 
+(column)
+Flex items can be reordered via CSS 
+
+How it works ? 
+display: flex; 
+This creates a flex container 
+All direct child items are flex items 
+
+Align Properties 
+
+justify-content: Align along the main axis (horizontal)
+align-items : Align along the cross axis ( vertical)
+align-content : Align when extra space in cross axis. 
