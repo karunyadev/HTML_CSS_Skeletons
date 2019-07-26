@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>:before and :after pseudo selectors</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #333;
+        color: white;
+      }
+      /*Apply flexbox on the header element */
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      header:before {
+        content: '';
+        background: url('https://source.unsplash.com/1600x900?nature,water')
+          no-repeat center center/cover;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      header > h1 {
+        font-size: 4rem;
+        margin: 1rem;
+      }
+      .is-required:after {
+        content: '*';
+        color: red;
+        padding-left: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <label for="name" class="is-required">Name</label>
+    <input type="text" placeholder="enter the name" /> -->
+
+    <header>
+      <h1>Hello World</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae atque
+        dicta architecto et sunt illo id impedit aut voluptas accusantium
+        blanditiis, possimus quaerat vel nihil fuga, non aliquam aliquid odio?
+      </p>
+    </header>
+    <section>
+      <h1>This is also a section</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+        blanditiis sint dicta dolor dolores illo molestias, deleniti illum,
+        dignissimos alias consequatur! Dolore molestias quia harum iste
+        consequatur impedit reprehenderit maiores?
+      </p>
+    </section>
+  </body>
+</html>

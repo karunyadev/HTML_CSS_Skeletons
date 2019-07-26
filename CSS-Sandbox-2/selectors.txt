@@ -1,0 +1,18 @@
+Targetted Selectors in CSS 
+
+:before selectors can be used for the image overlay in practical 
+situations and for also dynamic content injection using CSS in the 
+HTML.
+
+:after selector is also used for dynamic content injection after 
+a specific HTML element and also to highlight that a field is required 
+An example can be seen in 
+
+before-after-pseudo-selectors.html file 
+
+
+
+
+
+
+
