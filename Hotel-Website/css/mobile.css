@@ -1,0 +1,54 @@
+#navbar .hotel__logo {
+  /* Clear the floats */
+  float: none;
+  /* align to the center */
+  text-align: center;
+}
+
+#navbar ul,
+#navbar ul li {
+  float: none;
+}
+#navbar ul li a {
+  padding: 25px;
+  border-bottom: #444 dotted 1px;
+}
+#showcase {
+  height: 100%;
+}
+#showcase .showcase-content {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+/* Home Information  Mobile Styles  */
+#home-info .info__image {
+  display: none;
+}
+#home-info .info__content {
+  float: none;
+  width: 100%;
+}
+
+/* Boxes */
+.box {
+  float: none;
+  width: 100%;
+}
+
+#about__info .info__right,
+#about__info .info__right {
+  float: none;
+  width: 100%;
+}
+
+#about__info .info__left {
+  text-align: center;
+  display: block;
+  margin-left: 20vw;
+}
+#about__info .info__right {
+  margin-top: 30px;
+}
+.large__heading {
+  text-align: center;
+}
