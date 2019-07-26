@@ -1,0 +1,52 @@
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+
+/* Smart Phones  */
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.75rem;
+  }
+  #navbar .logo {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #navbar ul {
+    padding: 0.5rem;
+  }
+  #showcase .showcase-content {
+    top: 142px;
+    /* margin-top: -2rem; */
+  }
+  #who {
+    display: block;
+  }
+  #who .who-img {
+    display: none;
+  }
+  #clients .items img {
+    width: 80%;
+  }
+  #clients .items div:last-child {
+    display: none;
+  }
+  #contact {
+    flex-direction: column;
+  }
+}
+
+@media (max-height: 568px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+  #showcase .showcase-content {
+    top: 140px;
+    margin-top: -2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
